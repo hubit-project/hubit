@@ -1,0 +1,141 @@
+/*
+
+orange: #f17922;
+dark orange: #f15a24;
+
+black: #000;
+white: #fff;
+blue: #29abe2;
+
+dark grey: #333333;
+medium grey: #666666;
+medium light grey: #b3b3b3;
+light grey: #f2f2f2;
+
+*/
+
+/*general style*/
+*{
+	font-family: 'Allerta', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	min-height: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+body {
+	padding-bottom: 200px;
+}
+
+a {
+	text-decoration: none
+}
+
+.container {
+	max-width: 600px;
+	margin: auto;
+	position: relative;
+}
+
+
+/*header style*/
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+}
+
+#headDiv {
+	position: relative;
+	text-align: center;
+	padding: 15px 0;
+}
+
+#headDiv .navHeader {
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+}
+
+#logo {
+	display: inline-block;
+}
+
+#logo img {
+	width: 60%;
+}
+
+#userPhoto {
+	border: 1px solid #f17922;
+	border-radius: 100%;
+	width: 35px;
+	height: 35px;
+	overflow: hidden;
+	right: 90px
+}
+
+#userPhoto img {
+	height: 100%;
+	position: relative;
+}
+
+#navIcon {
+	right: 40px;
+	height: 20px;
+}
+
+.userHead {
+	color: #000;
+	font-size: 14px;
+	height: 20px;
+	right: 140px;
+}
+
+.btHeader {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.fa-bars {
+	color: #f17922;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+
+/*footer style*/
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+}
+
+#navFooter {
+	position: relative;
+	text-align: center;
+	padding: 15px 0;
+}
+
+#navFooter .btFooter {
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+	color: #f17922;
+}
+
+#navFooter .btFooter .iconFooter {
+	width: 35%;
+	display: block;
+	margin: auto;
+}
