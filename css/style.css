@@ -78,7 +78,7 @@ header {
 	width: 35px;
 	height: 35px;
 	overflow: hidden;
-	right: 90px
+	right: 70px
 }
 
 #userPhoto img {
@@ -95,7 +95,7 @@ header {
 	color: #000;
 	font-size: 14px;
 	height: 20px;
-	right: 140px;
+	right: 110px;
 }
 
 .btHeader {
