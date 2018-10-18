@@ -29,11 +29,11 @@ html {
 }
 
 body {
-	padding-bottom: 200px;
+	padding-bottom: 150px;
 }
 
 a {
-	text-decoration: none
+	text-decoration: none;
 }
 
 .container {
@@ -42,14 +42,57 @@ a {
 	position: relative;
 }
 
+.contentWrapper {
+	margin: 100px auto 0;
+	padding: 0 25px;
+}
+
+.contentWrapper h1 {
+	padding: 15px 0 10px;
+	color: #f17922;
+	font-size: 33px;
+}
+
+.btn {
+	padding: 8px 25px;
+	border: 0;
+	font-size: 16px;
+}
+
+.blue {
+	background-color: #29abe2;
+	color: #fff;
+	border: 2px solid #29abe2;
+	cursor: pointer;
+}
+
+.blue:hover {
+	background-color: #fff;
+	color: #29abe2;
+}
+
+.orange {
+	background-color: #f17922;
+	color: #fff;
+	border: 2px solid #f17922;
+	cursor: pointer;
+}
+
+.orange:hover {
+	background-color: #fff;
+	color: #f17922;
+}
+
 
 /*header style*/
 header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	background-color: #fff;
+	box-shadow: 0px 0px 5px #c7c7c7;;
+	z-index: 999;
 }
 
 #headDiv {
@@ -105,20 +148,99 @@ header {
 	margin: auto;
 }
 
-.fa-bars {
-	color: #f17922;
-	font-size: 20px;
+.hMenu {
+	width: 20px;
 	cursor: pointer;
+}
+
+
+/*Forms style*/
+#loginForm img[alt=logo]{
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+
+#loginForm #btnLogin {
+	display: block;
+	margin: 15px 0;
+}
+
+#loginForm #btnLogin .btn {
+	width: 49%;
+	text-align: center;
+	display: inline-block;
+}
+
+#loginForm #forgotPass {
+	color: #b3b3b3;
+}
+
+#loginForm #forgotPass:hover {
+	color: #666666;
+}
+
+#hubForm .btn {
+	margin-top: 25px;
+}
+
+.alertMsg {
+	margin: 15px 0;
+	padding: 20px;
+	position: relative;
+	display: none;
+	color: #fff;
+	text-align: center;
+}
+
+.error {
+	border: 1px solid #ff0000;
+	background-color: #fff5f5 !important;
+}
+
+.fieldModal {
+	margin: 20px 0;
+}
+
+.fieldModal label {
+	display: block;
+	margin: 8px 0;
+	color: #29abe2;
+	font-size: 18px;
+}
+
+.fieldModal input, .fieldModal select {
+	display: inline-block;
+	width: 100%;
+	padding: 8px;
+	outline-width: 0;
+	background-color: #fff;
+}
+
+.fieldModal input[type=file] {
+	display: inline-block;
+	outline-width: 0;
+	width: auto;
+	padding: 0;
+}
+
+.fieldModal textarea {
+	display: block;
+	width: 100%;
+	padding: 8px;
+	height: 100px;
+	outline-width: 0;
 }
 
 
 /*footer style*/
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	background-color: #fff;
+	box-shadow: 0px 0px 5px #c7c7c7;;
 }
 
 #navFooter {
@@ -129,13 +251,498 @@ footer {
 
 #navFooter .btFooter {
 	display: inline-block;
-	width: 32%;
+	width: 21%;
 	text-align: center;
 	color: #f17922;
+	margin: 0 10px;
+	font-size: 13px;
 }
 
 #navFooter .btFooter .iconFooter {
-	width: 35%;
+	width: 50%;
 	display: block;
 	margin: auto;
 }
+
+/*----------------profile---------*/
+#profile {
+	width: 100%;
+}
+#profile .coverProfilePhoto {
+	height: 200px;
+	max-width: 600px;
+	width: 100%;
+	margin-top:75px;
+}
+
+#profile .profileEdit-icon {
+	background-color: #f2f2f2;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	text-align: center;
+	position: absolute;
+	right: 20px;
+	margin-top: -70px;
+	box-shadow: 0px 13px 15px -8px rgba(0,0,0,0.3);
+}
+
+#profile .profileEdit-icon img {
+	width: 35px;
+	height: 35px;
+	margin-top: 11px;
+	margin-left: 3px;
+}
+
+#profile .profilePhoto {
+	position:relative;
+	text-align:center;
+	top:-80px;
+	overflow:hidden;
+	border-radius: 50%;
+	width:150px;
+	height:150px;
+	border:5px solid #f17922; /*orange*/
+	margin:0 auto;
+
+
+}
+#profile .profilePhoto img{
+	width:100%;
+}
+
+#profile .profilePhotoEdit-icon{
+	background-color: #f2f2f2; /*grey*/
+	opacity:0.6;
+	height: 60px;
+	width: 150px;
+	position: relative;
+	right: 0px;
+	bottom: 70px;
+
+}
+
+#profile .profilePhotoEdit-icon img{
+	width: 25px;
+	height: 25px;
+	margin-top: 4px;
+	margin-left: -15px;
+	position: absolute;
+	overflow:hidden;
+}
+
+#profileSections {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	text-align:center;
+}
+#profileSections img{
+	width:40px;
+	margin-top:100px;
+}
+
+#profileSections h5{
+	font-size:20px;
+
+}
+#sharePost textarea{
+	width: 500px;
+	height: 55px;
+	padding: 5px;
+	margin-bottom: 3px;
+	display: block;
+	border: 1px solid #b3b3b3; /*medium light grey*/
+	margin:0 auto;
+	margin-top:20px;
+}
+#shareIconPost{
+	border:1px solid #b3b3b3; /*medium light grey*/
+	width:500px;
+    margin:0 auto;
+    height:40px;
+    margin-bottom:50px;
+}
+#photoIcon{
+	float:left;
+	width:50%
+	margin-top:20px;
+}
+#photoIcon img{
+	width:25px;
+	float:left;
+	margin-top:5px;
+	margin-left:5px;
+}
+
+#photoIcon p{
+	font-size:15px;
+	margin-top:10px;
+	margin-left:30px;
+}
+#shareIcon{
+	float:right;
+	width:50%
+}
+#shareIcon img{
+    width:25px;
+    float:left;
+    margin-top:5px; 
+    margin-left:160px;  
+}
+#shareIcon p{
+	font-size:15px;
+	margin-top:10px;
+}
+.photo-icon-grey{
+	padding:20px;
+	float:left;
+
+}
+.photo-icon-grey img{
+	width:25px;
+}
+.hashtagFamilySmith p{
+	font-size:12px;
+	padding:20px;
+	font-weight:bold;
+}
+.hashtagFathersDay{
+	color:#f17922; /*orange*/
+}
+
+.card-photo-profile img {
+	background-size: cover;
+	background-position: top center;
+	float: left;
+	width: 50px;
+	height: 50px;
+	border: 3px solid #f17922; /*orange*/
+	border-radius: 50%;
+	margin: 20px 15px 20px 20px;
+}
+.card-poster-willow div:nth-child(2) {
+	margin-top: 10px;
+}
+.card-poster-willow {
+	padding-top: 25px;
+}
+.card-poster-willow> p:first-child {
+	float: left;
+	display: inline-block;
+	margin-right: 5px;
+}
+.card-poster-willow > p:nth-child(2) {
+	float: left;
+	color: #b3b3b3; /*medium gray*/
+}
+.card-poster-willow > p:nth-child(4) {
+	font-size: 9pt;
+}
+
+.dance-Smith-photo img{
+	margin-left: 80px;
+	width: 450px;
+}
+
+/*-------------HUB HOME------------*/
+
+#hubCover {
+	height: 200px;
+}
+.coverPhoto {
+	background: url("../assets/family.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	max-width: 600px;
+	width: 100%;
+}
+.edit-icon {
+	background-color: #f2f2f2;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	text-align: center;
+	position: absolute;
+	right: 20px;
+	margin-top: -30px;
+	box-shadow: 0px 13px 15px -8px rgba(0,0,0,0.3);
+}
+.edit-icon img {
+	width: 35px;
+	height: 35px;
+	margin-top: 11px;
+	margin-left: 3px;
+}
+#hubSections {
+	margin-top: 25px;
+	text-align: center;
+	float: left;
+	width: 100%;
+	height: 210px;
+}
+#hubSections h1 {
+	font-size: 34pt;
+	text-align: center;
+}
+#hubSections > div {
+	display: inline-block;
+	margin: 0 auto;
+	width: 25%;
+	margin-top: 25px;
+}
+#hubSections a {
+	display: block;
+	color: #000;
+}
+#hubSections img {
+	width: 60px;
+}
+#hubPost {
+	width: 100%;
+	height: 360px;
+}
+.small-profile-photo {
+	background: url("../assets/will.jpg");
+	background-size: cover;
+	background-position: top center;
+	float: left;
+	width: 80px;
+	height: 80px;
+	border: 3px solid #f17922; /*orange*/
+	border-radius: 50%;
+	margin-left: 50px;
+	margin-right: 15px;
+}
+#hubPost textarea {
+	width: 400px;
+	height: 55px;
+	padding: 5px;
+	margin-bottom: 3px;
+	display: block;
+	border: 1px solid #b3b3b3; /*medium light grey*/
+}
+#hubPost img {
+	margin-top: 5px;
+	width: 22px;
+	float: left;
+}
+#hubPost p {
+	float: left;
+	margin-top: 6px;
+	margin-left: 3px;
+	margin-right: 25px;
+	font-size: 11pt;
+}
+.hub-card {
+	margin: 0 auto;
+	background-color: #f2f2f2;
+	padding-bottom: 20px;
+	box-shadow: 
+		0px 10px 13px -10px rgba(0,0,0,0.3),
+		0px -10px 13px -10px rgba(0,0,0,0.3); 
+}
+.card-profile-photo {
+	background: url("../assets/jada.jpg");
+	background-size: cover;
+	background-position: top center;
+	float: left;
+	width: 50px;
+	height: 50px;
+	border: 3px solid #f17922; /*orange*/
+	border-radius: 50%;
+	margin: 20px 15px 20px 20px;
+}
+.hub-card div:nth-child(2) {
+	margin-top: 10px;
+}
+.card-poster {
+	padding-top: 25px;
+}
+.card-poster > p:first-child {
+	float: left;
+	display: inline-block;
+	margin-right: 5px;
+}
+.card-poster > p:nth-child(2) {
+	float: left;
+	color: #b3b3b3; /*medium gray*/
+}
+.card-poster > p:nth-child(4) {
+	font-size: 9pt;
+}
+.card-memory {
+	position: relative;
+	margin-top: 20px;
+	font-size: 14pt;
+}
+.card-memory p {
+	margin-bottom: 10px;
+}
+.hashtag {
+	color: #f17922; /*orange*/
+}
+.card-memory img {
+	margin-left: 80px;
+	width: 450px;
+}
+.card-memory img:nth-child(3) {
+	position: absolute;
+	width: 35px;
+	margin-left: 0px;
+	right: 85px;
+	bottom: 20px;
+}
+.card-likes {
+	margin-left: 80px;
+	margin-top: 5px;
+}
+.card-likes img {
+	width: 20px;
+}
+.card-likes p {
+	display: inline-block;
+	margin-right: 20px;
+}
+.card-comment {
+	margin-top: 20px;
+	margin-left: 40px;
+	height: 40px;
+}
+.card-comment img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	float: left;
+}
+.card-comment p {
+	font-size: 12pt;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.card-comment p:nth-child(3) {
+	font-size: 10pt;
+	color: #666666; /*medium gray*/
+	margin-top: 12px;
+	margin-left: 20px;
+
+}
+
+/*album page*/
+
+.coverAlbum img
+{
+	max-width: 100%;
+}
+h2,h3,p
+{
+	text-align: center;
+}
+.coverAlbum
+{
+	width: 90%;
+	margin: 20px auto;
+}
+
+.albumPictures
+{
+	width: 100%;
+	height: 100%;
+}
+
+.albumPictures img
+{
+	height: 100%;
+}
+.pictureHolder
+{
+	width: 49%;
+	position: relative;
+	overflow: hidden;
+	height: 200px;
+	padding: 10px;
+	display: inline-block;
+}
+.galleryContainer
+{
+	margin: auto;
+	text-align: center;
+}
+
+
+/*gallery modal*/
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+/*end of album page*/

@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -17,14 +16,14 @@
 <body>
 	<header>
 		<div id="headDiv" class="container">
-			<a class="navHeader" id="logo" href="#"><img src="images/logo.png" alt="hubit" /></a>
+			<a class="navHeader" id="logo" href="index.php?controller=Page&action=dashboard"><img src="images/logo.png" alt="hubit" /></a>
 			<div class="navHeader">
-				<a class="btHeader userHead" href="#">User Name</a>
+				<a class="btHeader userHead" href="index.php?controller=Page&action=dashboard">Username</a>
 				<div id="userPhoto" class="btHeader">
-					<a href="#"><img src="https://cdn1.thr.com/sites/default/files/imagecache/list_landscape_960x541/2017/12/pressonly_smith_onestrangerock_03_-_h_2017.jpg" alt="user" /></a>
+					<a href="index.php?controller=Page&action=dashboard"><img src="https://cdn1.thr.com/sites/default/files/imagecache/list_landscape_960x541/2017/12/pressonly_smith_onestrangerock_03_-_h_2017.jpg" alt="user" /></a>
 				</div>
 				<div id="navIcon" class="btHeader">
-					<span class="fas fa-bars"></span>
+					<img class="hMenu" src="images/hamb-menu.svg" alt="hamburguer menu" />
 				</div>
 			</div>
 		</div>

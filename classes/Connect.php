@@ -37,11 +37,20 @@ class Connect
 
 	static function uploadImg($fileImg)
 	{
+		$extensions = array('image/jpg', 'image/png', 'image/jpeg');
+		$maxSize = 2097152;
 		$directoryFiles = "assets";
+		$randomText = date("ymdhs");
+		$picName = $randomText."_".$_FILES[$fileImg]["name"];
 
-		$serverPlaceName = "../".$directoryFiles."/".$_FILES[$fileImg]["name"];
+		if(($_FILES[$fileImg]["size"] <= $maxSize) && (in_array($_FILES[$fileImg]["type"], $extensions))) {
+			$serverPlaceName = "../".$directoryFiles."/".$picName;
+			move_uploaded_file($_FILES[$fileImg]["tmp_name"], $serverPlaceName);
 
-		move_uploaded_file($_FILES[$fileImg]["tmp_name"], $serverPlaceName);
+			return $picName;
+		} else {
+			return false;
+		}
 	}
 
 	static function getGlobals($type)
