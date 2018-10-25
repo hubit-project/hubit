@@ -1,6 +1,12 @@
+	<?php
+		$arrHubs = Connect::runSql("singleData", "SELECT * FROM hubs");
+		$arrInfo =  getData('profile');
+	?>
+
 	<section class="contentWrapper container">
 		<div id="hubCover">
 			<div class="coverPhoto coverBg">
+				<img src="assets/<?=$arrHubs["strCoverPhoto"]?>" alt="<?=$arrHubs["strName"]?>">
 			</div><!--coverPhoto-->
 
 			<div class="edit-icon">
@@ -9,7 +15,7 @@
 		</div><!--cover-->
 
 		<div id="hubSections">
-			<h1>Smith Family</h1>
+			<h1><?=$arrHubs["strName"]?></h1>
 			<div>
 				<a href="http://localhost/hubit/index.php?controller=Page&action=album"><img src="images/album.png"></a>
 				<a href="http://localhost/hubit/index.php?controller=Page&action=album">Albums</a>
@@ -22,7 +28,8 @@
 		</div><!--hub-sections-->
 
 		<div id="hubPost">
-			<div class="small-profile-photo">
+			<div class="small-profile-photo coverBg">
+				<img src="assets/<?=$arrInfo["strProfilePhoto"]?>" alt="<?=$arrInfo["strFirstName"]?>">
 			</div><!--profile-photo-->
 
 			<div>
