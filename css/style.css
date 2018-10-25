@@ -710,7 +710,66 @@ h2,h3,p
     animation-name: zoom;
     animation-duration: 0.6s;
 }
+/* allHubs page style */
 
+#myHubsContainer {
+	width:600px;
+	max-width:100%;
+	margin:auto;
+}
+
+.myHubsTitle {
+	width:100%;
+	margin-top:120px;
+	margin-bottom:50px;
+	text-align:center;
+}
+
+.myHubsTitleIcon {
+	width:30px;
+}
+
+.myHubsTitle h2 {
+	font-size:34px;
+	font-weight:normal;
+	display:inline-block;
+}
+
+.myHubHolder {
+	width:50%;
+	float:left;
+	text-align:center;
+	height:250px;
+}
+
+.myHubCover{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin:auto;
+	margin-bottom:10px;
+}
+
+.myHubCover img {
+	height:100%;
+}
+
+.myHubHeadings h3 {
+	font-size:16px;
+}
+
+.myHubHeadings p {
+	font-size:12px;
+	color:#666666; /*medium gray*/;
+}
+
+@media only screen and (max-width:500px) {
+	.myHubHolder {
+		width:100%;
+		float:none;
+	}
+}
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
