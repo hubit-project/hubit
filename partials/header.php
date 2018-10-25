@@ -1,3 +1,6 @@
+<?php
+	$arrInfo =  getData('profile');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,9 +21,9 @@
 		<div id="headDiv" class="container">
 			<a class="navHeader" id="logo" href="index.php?controller=Page&action=dashboard"><img src="images/logo.png" alt="hubit" /></a>
 			<div class="navHeader">
-				<a class="btHeader userHead" href="index.php?controller=Page&action=dashboard">Username</a>
-				<div id="userPhoto" class="btHeader">
-					<a href="index.php?controller=Page&action=dashboard"><img src="https://cdn1.thr.com/sites/default/files/imagecache/list_landscape_960x541/2017/12/pressonly_smith_onestrangerock_03_-_h_2017.jpg" alt="user" /></a>
+				<a class="btHeader userHead" href="index.php?controller=Page&action=dashboard"><?=$arrInfo['strFirstName']?></a>
+				<div id="userPhoto" class="btHeader coverBg">
+					<a href="index.php?controller=Page&action=dashboard"><img src="assets/<?=$arrInfo['strProfilePhoto']?>" alt="user" /></a>
 				</div>
 				<div id="navIcon" class="btHeader">
 					<img class="hMenu" src="images/hamb-menu.svg" alt="hamburguer menu" />

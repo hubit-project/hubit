@@ -272,7 +272,7 @@ footer {
 	height: 200px;
 	max-width: 600px;
 	width: 100%;
-	margin-top:75px;
+	overflow: hidden;
 }
 
 #profile .profileEdit-icon {
@@ -317,8 +317,8 @@ footer {
 	height: 60px;
 	width: 150px;
 	position: relative;
-	right: 0px;
-	bottom: 70px;
+	right: 0;
+	bottom: 0;
 
 }
 

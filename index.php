@@ -1,4 +1,5 @@
 <?php
+session_start();
 function classLoades($class)
 {
 	include 'classes/'.$class.'.php';
@@ -6,9 +7,10 @@ function classLoades($class)
 spl_autoload_register('classLoades');
 
 include("controllers/MainController.php");
+include("models/getData.php");
 include("partials/header.php");
 
-$action = (isset($_GET["action"]))?$_GET["action"]:"login";
+$action = (isset($_GET["action"]) && !empty($_SESSION))?$_GET["action"]:"login";
 $controller = (isset($_GET["controller"]))?ucfirst($_GET["controller"]):"Page";
 
 $oRouter = new Router();

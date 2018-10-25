@@ -25,9 +25,21 @@ class PageController extends MainController
 		echo $content;
 	}
 
-	function hubs()
+	function hub()
 	{
 		$content = $this->showView('hub.php');
+		echo $content;
+	}
+	
+	function allhubs()
+	{
+		$content = $this->showView('allhubs.php');
+		echo $content;
+	}
+	
+	function createhub()
+	{
+		$content = $this->showView('createHub.php');
 		echo $content;
 	}
 

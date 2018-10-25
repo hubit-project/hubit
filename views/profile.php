@@ -1,15 +1,18 @@
-<section id="profile" class="container">
+<?php
+	$arrInfo =  getData('profile');
+?>
+<section id="profile" class="container contentWrapper">
 	<div id="hubCover">
 		<div class="coverProfilePhoto coverBg">
-			<img src="assets/willow_jadenBored.jpg">
+			<img src="assets/<?=$arrInfo['strCoverPhoto']?>">
        	</div><!--coverProfilePhoto-->
 
 		<div class="profileEdit-icon">
 			<img src="images/edit.png"/>
 		</div>
 
-		<div class="profilePhoto">
-			<img src="assets/will.jpg"/>
+		<div class="profilePhoto coverBg">
+			<img src="assets/<?=$arrInfo['strProfilePhoto']?>"/>
 				<div class="profilePhotoEdit-icon">
 				      <img src="images/edit.png" alt="profile photo edit icon"/><!--changes icon images-->
 			    </div>

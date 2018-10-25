@@ -18,7 +18,7 @@ if($fileUpload) {
 
 	header("location: index.php");
 } else {
-	echo "Oh No!";
+	header("location: ../index.php?controller=Page&action=createhub");
 }
 
 ?>
